@@ -1,0 +1,120 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #A36D33;
+  color: white;
+}
+
+img {
+  max-width:100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: white;
+}
+
+a:hover {
+  color: grey;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  color: white;
+}
+
+p {
+  padding: 1%;
+}
+
+
+
+.banner {
+  grid-area: banner;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.inSec1 {
+  grid-area: inSec1;
+
+}
+
+.inSec2 {
+  grid-area: inSec2;
+}
+
+
+.inSec3 {
+  grid-area: inSec3;
+
+}
+
+.inSec3 p {
+  padding: 1%;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: black;
+}
+
+#footerAddress {
+  padding-top: 20px;
+}
+
+#footerContact {
+  padding-top: 20px;
+}
+
+#policies {
+  padding-top: 20px;
+}
+
+
+
+
+
+  @media screen and (min-width:480px) {
+
+    .wrapper {
+      display: grid;
+      grid-template-columns : repeat(12, 1fr);
+      grid-template-areas:
+      "banner nav nav nav nav nav nav nav nav nav nav nav"
+      "inSec1 inSec1 inSec1 inSec1 inSec1 inSec1 inSec1 inSec1 inSec1 inSec1 inSec1 inSec1"
+      "inSec2 inSec2 inSec2 inSec2 inSec2 inSec2 inSec3 inSec3 inSec3 inSec3 inSec3 inSec3"
+      "footer footer footer footer footer footer footer footer footer footer footer footer";
+        }
+
+
+        nav {
+          margin-left: auto;
+        }
+
+        ul{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+        }
+
+        ul li {
+              list-style-type: none;
+              padding-left: 20px;
+            }
+
+
+
+
+
+  }
